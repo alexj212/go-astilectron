@@ -1,3 +1,5 @@
+export PROJ_PATH=github.com/asticode/go-astilectron
+
 ####################################################################################################################
 ##
 ## help for each task - https://marmelab.com/blog/2016/02/29/auto-documented-makefile.html
@@ -12,8 +14,8 @@ help: ## This help.
 
 
 test: ## run tests
-	go test github.com/asticode/go-astilectron
+	go test $(PROJ_PATH)
 
 fmt: ## run fmt
-	go fmt github.com/asticode/go-astilectron/...
+	go fmt $(PROJ_PATH)/...
 
